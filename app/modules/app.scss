@@ -1,0 +1,45 @@
+@import '../content/styles/reset.scss';
+
+$main-blue: #00a19a;
+$light-grey: #b8b8b8;
+$white: white;
+
+$main-font: Arial, Helvetica;
+
+header {
+    background: $main-blue;
+    font-family: $main-font;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.mainTitle {
+    color: $white;
+    text-align: center;
+    font-size: 30pt;
+    margin: 0;
+    padding: 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    font-family: $main-font;
+}
+
+.selector {
+    padding: 1em;
+    margin-top: 1em;
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+}
+
+.logo {
+    width: 300px;
+}
+

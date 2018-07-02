@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+
+  react-starter:
+    container_name: react-starter
+    build:
+      context: ../../
+      dockerfile: ./config/docker/Dockerfile
+    ports:
+      - '8080:80'

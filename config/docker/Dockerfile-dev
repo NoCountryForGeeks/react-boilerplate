@@ -1,0 +1,15 @@
+FROM node:10.1.0-alpine
+RUN apk --no-cache update \
+&& apk --no-cache add g++ make bash zlib-dev libpng-dev git \
+&&  rm -fr /var/cache/apk/*
+
+RUN mkdir -p /usr/src/app
+COPY . /usr/src/app
+
+WORKDIR /usr/src/app
+
+RUN yarn install
+
+EXPOSE 8080
+
+CMD ["yarn", "start"]

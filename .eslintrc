@@ -1,0 +1,64 @@
+{
+    "plugins": [
+        "react", "smells", "xo"
+    ],
+    "extends": [
+        "eslint:recommended", "plugin:react/recommended"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": true,
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "env": {
+        "browser": true,
+         "node":true
+    },
+    "globals": {
+        "__webpack_hash__": true
+    },
+    "rules": {
+        "no-console": 0,
+        "no-underscore-dangle": [ 1 , { "allow": ["__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"] } ],
+        "quotes": [2, "single"],
+        "react/prop-types": 0,
+        "react/no-string-refs": 0,
+        "smells/no-switch": 1,
+        "smells/no-complex-switch-case": 1,
+        "smells/no-setinterval": 1,
+        "smells/no-this-assign": 1,
+        "jsx-quotes": ["error", "prefer-single"],
+        "no-cond-assign": ["error", "always"],
+        "no-constant-condition": "warn",
+        "no-dupe-keys": "warn",
+        "no-duplicate-case": "warn",
+        "no-empty": "warn",
+        "no-ex-assign": "error",
+        "no-extra-semi": "warn",
+        "no-unreachable": "warn",
+        "array-callback-return": "error",
+        "block-scoped-var": "error",
+        "complexity": ["warn", 2],
+        "eqeqeq": ["warn", "always"],
+        "no-eq-null": "warn",
+        "no-alert": "error",
+        "no-empty-function": "warn",
+        "no-eval": "error",
+        "no-global-assign": "error",
+        "require-await": "warn",
+        "camelcase": "warn",
+        "comma-dangle": ["warn", "never"],
+        "no-duplicate-imports": "warn",
+        "no-dupe-class-members": "warn",
+        "no-const-assign": "error",
+        "arrow-spacing": "warn",
+        "no-multiple-empty-lines": "warn",
+        "object-curly-spacing": ["error", "always"],
+        "array-bracket-spacing": ["error", "always"],
+        "computed-property-spacing": ["error", "always"]
+    }
+}
