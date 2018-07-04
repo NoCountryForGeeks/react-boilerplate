@@ -6,7 +6,7 @@
     </a>
 </div>
 
-The **nocountryforgeeks** team have been working in a base **React Boilerplate** to allow developers to start a **React** project with no configuration and trying to improve the development experience and reduce the develop time. 
+The **nocountryforgeeks** team have been working in a base **React Boilerplate** to allow developers to start a **React** project with no configuration and trying to improve the development experience and reduce the develop time.
 
 # Features
 
@@ -18,7 +18,7 @@ The **nocountryforgeeks** team have been working in a base **React Boilerplate**
 
 
 - **Internationalization**: Support multiple languages, making lazy loading languages when the application  language is changed. (i18next, i18next-browser-languagedetector, i18next-xhr-backend, react-i18next)
- 
+
 - **CSS**: Write modularity CSS for each component. The configuration generates unique class names, eliminate the unused styles and lazy load chunks of css per component to best performance. (css-loader, postcss-loader, purifycss-webpack, mini-css-extract-plugin)
 
 - **Linter**: Inmedialtly linter errors and warnings in IDE and console, linting JS and CSS. (eslint, stylelint)
@@ -45,14 +45,14 @@ The **nocountryforgeeks** team have been working in a base **React Boilerplate**
 
 - **Production bundle**: It's posible to create 2 production bundles. First way generate the application as statics files. Second way generate the files with a **nginx** server configured to serve the application.
 
-- **Zip resources**: The production bundle, generate 3 output file types (.js, .zip, .br). It allow the server to send the file with minimun file that is supported muy the requester browser. With process the .br files are about **400%** smaller!. 
+- **Zip resources**: The production bundle, generate 3 output file types (.js, .zip, .br). It allow the server to send the file with minimun file that is supported muy the requester browser. With process the .br files are about **400%** smaller!.
 
 - **IDE configuration**: To improve **developer experience** there is a **Docker image** with a **VS Code** ready to start **developing** with all settings configured.
 
 # Quick start
 
-1. Clone the repo using `git clone [repo url goes here]`
-2. Move to boilerplate directory `cd [repo name goes here]`
+1. Clone the repo using `git clone https://github.com/NoCountryForGeeks/react-boilerplate.git`
+2. Move to boilerplate directory `cd react-boilerplate`
 3. Execute `yarn start` or `npm start`
 
 # Road Map
@@ -62,7 +62,7 @@ The **nocountryforgeeks** team have been working in a base **React Boilerplate**
     - Transparent configuration
     - Generate the webpack configuration as npm package
     - Extensible webpack configuration
-- Diferent build platforms support 
+- Diferent build platforms support
     - gitHub
     - gitLab
     - VSTS
@@ -80,5 +80,3 @@ The **nocountryforgeeks** team have been working in a base **React Boilerplate**
     - PWA support (yes, no)
     - SSR support (yes, no)
 - Generate SPA reporter.
-
-
