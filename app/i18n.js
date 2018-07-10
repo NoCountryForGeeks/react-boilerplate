@@ -12,7 +12,7 @@ i18n
   .use(i18nextXHR)
   .init({
     backend: {
-      loadPath: language => `./content/i18n/${language}.json`,
+      loadPath: language => `/content/i18n/${language}.json`,
       allowMultiLoading: false,
       queryStringParams: {
         v: __webpack_hash__
@@ -24,7 +24,6 @@ i18n
     ns: NAMESPACES,
     defaultNS: DEFAULTNAMESPACE,
     debug: false,
-    keySeparator: false,
     interpolation: {
       escapeValue: false,
       formatSeparator: ','
