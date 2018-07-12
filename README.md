@@ -1,4 +1,4 @@
-# NC4G Rect Boilerplate
+# NC4G React Boilerplate
 
 <div align="center">
     <a href="http://www.nocountryforgeeks.com" target="_blank">
