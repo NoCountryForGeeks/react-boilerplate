@@ -20,21 +20,21 @@ const sagaMiddleware = createSagaMiddleware();
 const middlewares = [ sagaMiddleware ];
 
 const store = createStore(
-    reducers,
-    composeEnhacers(applyMiddleware(...middlewares))
+	reducers,
+	composeEnhacers(applyMiddleware(...middlewares))
 );
 
 sagas.map(saga => sagaMiddleware.run(saga));
 
 const render = Component => {
-    ReactDOM.render(
-        <Provider store={store}>
-            <I18nextProvider i18n={i18n}>
-                <Component />
-            </I18nextProvider>
-        </Provider>,
-        document.getElementById('app')
-    );
+	ReactDOM.render(
+		<Provider store={store}>
+			<I18nextProvider i18n={i18n}>
+				<Component />
+			</I18nextProvider>
+		</Provider>,
+		document.getElementById('app')
+	);
 };
 
 render(Root);

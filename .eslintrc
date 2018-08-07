@@ -42,7 +42,7 @@
         "no-unreachable": "warn",
         "array-callback-return": "error",
         "block-scoped-var": "error",
-        "complexity": ["warn", 2],
+        "complexity": ["warn", 3],
         "eqeqeq": ["warn", "always"],
         "no-eq-null": "warn",
         "no-alert": "error",

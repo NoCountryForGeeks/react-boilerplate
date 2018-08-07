@@ -1,12 +1,12 @@
 const testDefault = /\.exec\.js$/;
 
 module.exports = ({ test = testDefault } = { test: testDefault }) => ({
-    module: {
-        rules: [
-            {
-                test,
-                loader: 'script-loader'
-            }
-        ]
-    }
+	module: {
+		rules: [
+			{
+				test,
+				loader: 'script-loader'
+			}
+		]
+	}
 });

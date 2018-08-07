@@ -1,3 +1,3 @@
 module.exports = ({ sourceMapType }) => ({
-    devtool: sourceMapType
+	devtool: sourceMapType
 });
