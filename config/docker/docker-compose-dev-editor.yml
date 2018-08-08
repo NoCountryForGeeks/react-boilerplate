@@ -1,0 +1,21 @@
+version: '3.5'
+services:
+    web:
+        build:
+            context: ../../
+            dockerfile: ./config/docker/Dockerfile-dev
+        image: react-starter-dev
+        container_name: react-starter-dev
+        ports:
+            - '8080:8080'
+        volumes:
+            - ../../:/usr/src/app
+            - '/usr/src/app/node_modules'
+    ide:
+        image: nocountryforgeeks/vscode-js
+        volumes:
+            - ../../:/home/user/code
+        depends_on:
+            - web
+        environment:
+            DISPLAY: [USER_SETTING_DISPLAY_ENVIRONMENT_VARIABLE]
