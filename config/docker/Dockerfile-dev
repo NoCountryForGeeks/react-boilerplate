@@ -1,14 +1,16 @@
-FROM node:10.1.0-alpine
+FROM node:10.8.0-alpine
 RUN apk --no-cache update \
 && apk --no-cache add g++ make bash zlib-dev libpng-dev git \
 &&  rm -fr /var/cache/apk/*
+
+RUN yarn global add phantomjs-prebuilt
 
 RUN mkdir -p /usr/src/app
 COPY . /usr/src/app
 
 WORKDIR /usr/src/app
 
-RUN yarn install
+RUN yarn
 
 EXPOSE 8080
 
