@@ -1,6 +1,6 @@
 module.exports = () => ({
-    loader: 'postcss-loader',
-    options: {
-        plugins: () => [ require('autoprefixer')() ]
-    }
+	loader: 'postcss-loader',
+	options: {
+		plugins: () => [ require('autoprefixer')() ]
+	}
 });

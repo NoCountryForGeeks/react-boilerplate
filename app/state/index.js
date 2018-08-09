@@ -1,4 +1,4 @@
 export default {
-    sagas: [],
-    reducers: {}
+	sagas: [],
+	reducers: {}
 };

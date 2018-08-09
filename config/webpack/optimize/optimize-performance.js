@@ -1,3 +1,3 @@
 module.exports = options => ({
-    performance: options
+	performance: options
 });

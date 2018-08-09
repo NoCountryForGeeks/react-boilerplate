@@ -1,7 +1,5 @@
 const webpack = require('webpack');
 
 module.exports = () => ({
-    plugins: [
-        new webpack.ExtendedAPIPlugin()
-    ]
+	plugins: [ new webpack.ExtendedAPIPlugin() ]
 });
