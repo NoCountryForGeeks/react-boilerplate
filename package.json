@@ -6,7 +6,8 @@
     "license": "MIT",
     "scripts": {
         "start": "webpack-dev-server",
-        "start:docker": "docker-compose -f ./config/docker/docker-compose-dev.yml up --build",
+        "start:docker": "docker-compose -f ./config/docker/docker-compose-dev.yml up",
+        "start:docker:editor": "docker-compose -f ./config/docker/docker-compose-dev-editor.yml up",
         "build": "webpack --env production",
         "start:prod:docker": "docker-compose -f ./config/docker/docker-compose.yml up --build",
         "build:docker": "./config/docker/docker-compose build -f ./config/docker/docker-compose.yml",

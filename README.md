@@ -54,6 +54,7 @@ The **nocountryforgeeks** team have been working in a base **React Boilerplate**
 1. Clone the repo using `git clone https://github.com/NoCountryForGeeks/react-boilerplate.git`
 2. Move to boilerplate directory `cd react-boilerplate`
 3. Execute `yarn start` or `npm start`
+4. If you wanna have a full development enviroment you can use `yarn start:docker:editor` and the project will be run in a container and a vscode instance previosly configured will be run with the project opened. (Disclaimer: Don´t forget setting the environment DISPLAY variable if you are working on a windows machine)
 
 # Road Map
 
